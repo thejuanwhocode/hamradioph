@@ -1,0 +1,30 @@
+article {
+    padding: 0.8rem 0; 
+    h2{
+        margin-bottom:20px;
+    }
+    h3,h4{
+        margin-bottom:15px;
+    }
+    .post-image{
+        max-height: 300px;
+        overflow: hidden;
+        margin-bottom: 0.8rem;
+        img{
+            width: 100%;
+        }
+    }
+
+    header{
+        margin-bottom: 0.9rem;
+    }
+    .post-title{
+
+    }
+    .post-meta{
+        border-bottom: 1px solid $border-color;
+        border-top: 1px solid $border-color;
+        padding:.3rem 0;
+        font-size: 0.96rem;
+    }
+}

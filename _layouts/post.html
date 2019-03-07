@@ -1,9 +1,35 @@
 ---
 layout: default
 ---
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title border-bottom">{{ page.title | escape }}</h1>
-    </header>
-    <div class="post-content">{{ content }}</div>
-</article>
+{% assign author = site.data.people[page.author] %}
+<div class="row">
+    <div class="col-md-9 col-sm-8 col-xs-12">
+        <article class="post">    
+            {% if page.featured_image %}
+            <div class="post-image rounded">
+                <img class="img-fluid" src="{{ page.featured_image }}" alt="{{ page.title | escape }}" title="{{ page.title | escape }}">
+            </div>
+            
+            {% endif %}
+            <header class="post-header">
+                <h1 class="post-title">{{ page.title | escape }}</h1>                
+                <div class="post-meta">
+                    <span class="post-date">Published on {{ page.date | date: "%B %-d, %Y at %r" }}</span>
+                </div>
+            </header>
+            <div class="post-content">{{ content }}</div>
+            {% if page.author %}
+            <div class="post-author">
+                <div class="card">
+                    <div class="card-header">About the Author</div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ author.name }}</h5>
+                        <p class="card-text">{{ author.bio }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </article>
+    </div>
+    <div class="col-md-3 col-sm-4 col-xs-12"></div>
+</div>

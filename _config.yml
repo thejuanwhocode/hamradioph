@@ -42,5 +42,9 @@ plugins:
 
 permalink: /:categories/:title:output_ext
 
+collections:
+    authors:
+        output: true
+
 sass:
     sass_dir: _sass

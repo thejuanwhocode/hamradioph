@@ -1,0 +1,18 @@
+body {
+    padding-top: 56px;
+}
+
+/* Wave */
+.a {fill: none;}
+.b {clip-path: url(#a);}
+.c,.d {fill: #f9f9fc;}
+.d {opacity: 0.5;isolation: isolate;}
+
+header.masthead {
+    padding: 3rem 0 0 ;
+    position: relative;
+    background-color: $masthead-bgcolor;
+    background-image: url('../img/default-masthead.jpg'),linear-gradient(45deg,$masthead-bgcolor 0%,#006fe6 100%);
+    background-size: cover;
+    z-index: 0;
+}

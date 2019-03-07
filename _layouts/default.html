@@ -2,7 +2,14 @@
 <html>
 {% include head.html %}
 <body>
-    {{ content }}
+    {% include partial/topbar.html %}
+    {% if page.show_header %}
+        {% include partial/header.html %}
+    {% endif %}
+    <div class="container" style="padding-top:20px;">
+        {{ content }}
+    </div>
+    
     {% include footer.html %}
 </body>
 </html>

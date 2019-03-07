@@ -40,5 +40,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+permalink: /:categories/:title:output_ext
+
 sass:
     sass_dir: _sass

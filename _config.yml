@@ -40,7 +40,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-permalink: /:categories/:title:output_ext
+permalink: /blogs/:title:output_ext
 
 collections:
     authors:

@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 author: juan_caser
 title: "WLN KD-C1 — Year after Review"
-featured_image: "https://cdn-images-1.medium.com/max/800/1*hELxrCuo8VE8CoA4zoVa5w.png"
-categories: [reviews]
+thumbnail: "https://cdn-images-1.medium.com/max/800/1*hELxrCuo8VE8CoA4zoVa5w.png"
+categories: [Reviews]
 excerpt_separator: <!--more-->
 ---
 When this little thing came everybody is talking about it, it is small, compact and very loud. Nope its not the Baofeng UV-3R+, its WLN KD-C1. I have this little radio for more than a year now and I could certainly say it became my favorite that it is now my EDC radio.<!--more-->

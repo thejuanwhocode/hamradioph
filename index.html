@@ -1,53 +1,43 @@
 ---
 layout: default
-show_header: true
+header_title: "#gethamph"
+header_description: "Becoming a licensed amateur radio operator is rewarding and fun, it enables you to connect to people across world without the need of internet and cell phones and  how it can be a service to our community."
 ---
-<div class="row">
-    <div class="col-md-8 mb-5">
+<div class="row home">
+    <div class="col-md-8 col-sm-12 col-xs-12">
         <h2>What is Ham Philippines?</h2>
         <hr>
-        <p>Ham Philippines or HamPH is an advocacy platform that aimed to simplify the education of would be amateur radio operator, it shares and curate information and references that would make everyone knowledgeable about ham radio. So you want to be a ham?</p>
-        <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+        <p>Ham Philippines is an advocacy platform that aimed to simplify the education of would be amateur radio operator, it shares and curate information and references that would make everyone knowledgeable about ham radio. So you want to be a ham?</p>
+        <a class="btn btn-primary btn-lg" href="/get-started">So you want to be a ham?</a>
     </div>
-    <div class="col-md-4 mb-5">
+    <div class="col-md-4 col-sm-12 col-xs-12">
         <a data-fancybox href="https://www.youtube.com/watch?v=nabuU9XV6bs" class="video-popup"><img class="img-thumbnail" src="/assets/img/gethamph.png" alt=""></a>
     </div>
 </div>
-
-<div class="row">
-<div class="col-md-4 mb-5">
-<div class="card h-100">
-<img class="card-img-top" src="http://placehold.it/300x200" alt="">
-<div class="card-body">
-<h4 class="card-title">Card title</h4>
-<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
-</div>
-<div class="card-footer">
-<a href="#" class="btn btn-primary">Find Out More!</a>
-</div>
-</div>
-</div>
-<div class="col-md-4 mb-5">
-<div class="card h-100">
-<img class="card-img-top" src="http://placehold.it/300x200" alt="">
-<div class="card-body">
-<h4 class="card-title">Card title</h4>
-<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-</div>
-<div class="card-footer">
-<a href="#" class="btn btn-primary">Find Out More!</a>
-</div>
-</div>
-</div>
-<div class="col-md-4 mb-5">
-<div class="card h-100">
-<img class="card-img-top" src="http://placehold.it/300x200" alt="">
-<div class="card-body">
-<h4 class="card-title">Card title</h4>
-<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-</div>
-<div class="card-footer">
-<a href="#" class="btn btn-primary">Find Out More!</a>
-</div>
-</div>
+<div class="latest-blogs mt-5 mb-5">
+    <h2 class="mb-3">Latest blogs</h2>
+    <div class="row">    
+        {% for post in site.posts limit:3 %}
+            {% if post.thumbnail %}            
+                <div class="col-md-4 col-sm-6 col-xs-12 mb-5">
+                    <a class="post-card h-100" href="{{ post.url }}">
+                        <div class="post-image">
+                            <img src="{{ post.thumbnail }}" alt="{{  post.title }}" title="{{  post.title }}" />
+                        </div>
+                        <div class="post-meta">
+                            <div class="post-tags">
+                                {% for tag in post.categories %}
+                                    <span class="tag">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                            <h4 class="post-title">{{ post.title }}</h4>
+                            {{ post.excerpt }}
+                            <div class="post-date text-muted">Published on {{ post.date | date: "%B %-d, %Y" }} at {{ post.date | date: "%l:%M %p" }}</div>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="text-center mb-5"><a href="/blogs" class="btn btn-outline-primary">More Blogs &raquo;</a></div>
 </div>

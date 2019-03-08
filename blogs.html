@@ -1,0 +1,23 @@
+---
+layout: page
+permalink: /blogs
+category: blogs
+title: "Blogs"
+header_title: Blogs
+header_description: >
+    Collection of amateur radio blogs and reviews 
+---
+{% for post in site.posts %}
+<div class="post-item">
+    <div class="row">
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <a href="{{ post.url }}"><img class="img-fluid rounded" src="{{ post.thumbnail }}" alt="{{ post.title }}" title="{{ post.title }}" /></a>
+        </div>
+        <div class="col-md-8 col-sm-9 col-xs-12">
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>{{ post.excerpt }}</p>
+            <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+{% endfor %}

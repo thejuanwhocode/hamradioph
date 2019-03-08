@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 author: juan_caser
 title: "Baofeng UV-3R+ — a Year after Review"
-featured_image: "https://lh3.googleusercontent.com/u/0/d/1on7b9NYTjehG9zI7D96QXdJPmUWQH0Ph=w1366-h664-iv1"
-categories: [reviews]
+thumbnail: "https://lh3.googleusercontent.com/u/0/d/1on7b9NYTjehG9zI7D96QXdJPmUWQH0Ph=w1366-h664-iv1"
+categories: [Reviews]
 excerpt_separator: <!--more-->
 ---
 Way back December 2016 on our club Christmas party, one of the price is a small radio. I was so curious since it is very small and portable. After searching for couple days i stumble upon Baofeng UV-3R.<!--more--> Thats where i started digging into this portable radio more.

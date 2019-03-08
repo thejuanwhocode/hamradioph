@@ -1,7 +1,35 @@
-.btn, .alert,.rounded{
+.btn, 
+.alert,
+.rounded,
+.navbar-toggler,
+.post-image,
+.post-tags .tag{
     -webkit-border-radius: $border-radius !important;
        -moz-border-radius: $border-radius !important;
          -o-border-radius: $border-radius !important;
             border-radius: $border-radius !important;
 
+}
+
+.navbar-dark{
+   background-color: #191919 !important;
+   
+}
+.navbar{
+   .nav-link{
+        font-size: .75rem;
+        line-height: 1.45em;
+        text-transform: uppercase;
+        font-family: $font-sans;
+        font-weight: 600;
+   }
+   .nav-link:hover{
+    color:#0C73A8;
+   }
+}
+
+.home{
+    .card{
+        border: none !important;
+    }
 }

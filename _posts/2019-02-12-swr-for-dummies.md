@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 author: juan_caser
 title: "SWR for Dummies"
-featured_image: "https://doc-14-a0-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/t7n9ka21b93k9akhkrm0ecqr352tcq90/1551967200000/10239179046179355349/*/1qUamf4ARRy7Gl1F3BYJxprNMPAs_HPsQ?e=view"
-categories: [articles]
+thumbnail: "https://doc-14-a0-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/t7n9ka21b93k9akhkrm0ecqr352tcq90/1551967200000/10239179046179355349/*/1qUamf4ARRy7Gl1F3BYJxprNMPAs_HPsQ?e=view"
+categories: [Blogs]
 excerpt_separator: <!--more-->
 ---
 

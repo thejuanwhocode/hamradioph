@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg  navbar-light bg-light  fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="/assets/img/logo.png" /></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+        <ul class="navbar-nav ml-auto">
+            {% if page.url == '/' %}
+                {% assign current = 'home' %}
+            {% elsif page.url == '/contact.html' %}
+                {% assign current = 'contact' %}
+            {% elsif page.url == '/about.html' %}
+                {% assign current = 'about' %}
+            {% elsif page.url == '/blogs' %}
+                {% assign current = 'blogs' %}
+            {% elsif page.url == '/reviews' %}
+                {% assign current = 'reviews' %}
+            {% else %}
+                {% if page.categories contains "Reviews" %}
+                    {% assign current = 'reviews' %}
+                {% elsif page.categories contains "Blogs" %}
+                    {% assign current = 'blogs' %}
+                {% endif %}
+            {% endif %}
+
+            <li class="nav-item{% if current == 'home' %} active{% endif %}">
+                <a class="nav-link" href="/">Home
+                    {% if current == "home" %}
+                        <span class="sr-only">(current)</span>
+                    {% endif %}
+                </a>
+            </li>
+            <li class="nav-item{% if current == 'about' %} active{% endif %}">
+                <a class="nav-link" href="/about">About</a>
+                {% if current == "about" %}
+                    <span class="sr-only">(current)</span>
+                {% endif %}
+            </li>
+            <li class="nav-item{% if current == 'blogs' %} active{% endif %}">
+                <a class="nav-link" href="/blogs">Blogs</a>
+                {% if current == "blogs" %}
+                    <span class="sr-only">(current)</span>
+                {% endif %}
+            </li>
+            <li class="nav-item{% if current == 'reviews' %} active{% endif %}">
+                <a class="nav-link" href="/reviews">Reviews</a>
+                {% if current == "reviews" %}
+                    <span class="sr-only">(current)</span>
+                {% endif %}
+            </li>
+            <li class="nav-item{% if current == 'contact' %} active{% endif %}">
+                <a class="nav-link" href="/contact">Contact</a>
+                {% if current == "contact" %}
+                    <span class="sr-only">(current)</span>
+                {% endif %}
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>

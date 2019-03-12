@@ -22,6 +22,24 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hamradioph
 github_username:  hamradioph
 
+future: false
+
+defaults:
+  -
+    scope:
+      type: "posts"      
+    values:
+      layout: "post"
+      author: juan_caser
+      is_post: true
+      header: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      
 # Build settings
 markdown: kramdown
 plugins:
@@ -40,7 +58,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-permalink: /blogs/:title:output_ext
+permalink: /:categories/:title:output_ext
 
 collections:
     authors:
@@ -48,3 +66,6 @@ collections:
 
 sass:
     sass_dir: _sass
+
+excerpt_max: 
+    featured: 100

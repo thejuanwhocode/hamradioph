@@ -1,50 +1,32 @@
-body {
-    padding-top: 56px;
-    font-family: $font-sans;
-    font: inherit;
-    font-size: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-p{
-    font-family: $font-sans;
-    line-height: 1.5em;
-    font-size:0.9rem;
-}
-a:hover{
-    color:#0084ad;
-    @include transition(0.6s,ease);
-}
 /* Wave */
 .a {fill: none;}
 .b {clip-path: url(#a);}
 .c,.d {fill: #f9f9fc;}
 .d {opacity: 0.5;isolation: isolate;}
 
-header.masthead {
-    padding: 3rem 0 0 ;
-    position: relative;
-    background-color: $masthead-bgcolor;
-    background-image: url('../img/default-masthead.jpg'),linear-gradient(45deg,$masthead-bgcolor 0%,#006fe6 100%);
-    background-size: cover;
-    z-index: 0;
+body {
+    padding-top: 66px;
+    font-family: $font-sans;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-serif;
 }
 
-h1,h2,h3{
-    font-family: $font-serif;
-}
-
-img{
-    font-family: $font-serif;
-    color:#FFF;
-    font-size:0.8rem;    
-}
-a img{
-    opacity: 0.6;
-    @include transition(0.6s,ease);
-    color:#FFF;
-    text-decoration: none !important;
-}
-a:hover img{
-    opacity: 100;    
+.breadcrumb{
+    background: transparent;
+    padding: .75rem 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    .breadcrumb-item,
+    .breadcrumb-item a{
+        font-size: .8rem;
+        font-weight: bold;
+        color:rgba(0,0,0,.6);
+    }
+    .breadcrumb-item{
+        color:#000000;
+    }
+    .breadcrumb-item a:hover{
+        color:#000;
+    }
 }

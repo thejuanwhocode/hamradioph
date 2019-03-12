@@ -1,42 +1,25 @@
+.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+   padding:0;
+ 
+   > .col,
+   > [class*="col-"] {
+     padding-right: 0;
+     padding-left: 0;
+   }
+ }
 .btn, 
 .alert,
 .rounded,
+.breadcrumb,
 .navbar-toggler,
 .post-image,
-.post-tags .tag{
+.post-tags .tag,
+.badge{
     -webkit-border-radius: $border-radius !important;
        -moz-border-radius: $border-radius !important;
          -o-border-radius: $border-radius !important;
             border-radius: $border-radius !important;
 
-}
-
-.btn{
-   font-family: $font-sans;
-   font-weight: bold;
-   text-transform: uppercase;
-   font-size: .8rem;
-}
-
-.navbar-dark{
-   background-color: #191919 !important;
-   
-}
-.navbar{
-   .nav-link{
-        font-size: .75rem;
-        line-height: 1.45em;
-        text-transform: uppercase;
-        font-family: $font-sans;
-        font-weight: 600;
-   }
-   .nav-link:hover{
-    color:#0C73A8;
-   }
-}
-
-.home{
-    .card{
-        border: none !important;
-    }
 }
